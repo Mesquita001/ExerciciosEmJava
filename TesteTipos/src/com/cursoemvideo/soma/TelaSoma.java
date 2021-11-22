@@ -26,21 +26,66 @@ public class TelaSoma extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtN1 = new javax.swing.JTextField();
+        txtN2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        lblSoma = new javax.swing.JLabel();
+        btnSoma = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("+");
+
+        lblSoma.setText("0");
+
+        btnSoma.setText("=");
+        btnSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSomaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(txtN1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel1)
+                .addGap(30, 30, 30)
+                .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(btnSoma)
+                .addGap(44, 44, 44)
+                .addComponent(lblSoma)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtN1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSoma)
+                    .addComponent(jLabel1)
+                    .addComponent(lblSoma))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
+        // TODO add your handling code here:
+        int n1= Integer.parseInt(txtN1.getText());
+        int n2 =Integer.parseInt(txtN2.getText());
+        int s = n1 + n2;
+        lblSoma.setText(Integer.toString(s));
+        
+    }//GEN-LAST:event_btnSomaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +123,10 @@ public class TelaSoma extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSoma;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblSoma;
+    private javax.swing.JTextField txtN1;
+    private javax.swing.JTextField txtN2;
     // End of variables declaration//GEN-END:variables
 }
