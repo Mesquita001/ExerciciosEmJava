@@ -67,6 +67,7 @@ public class telaIdade extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.jpg"))); // NOI18N
         jLabel5.setToolTipText("");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel3.setText("Ano Atual:");
 
         lblAno.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
