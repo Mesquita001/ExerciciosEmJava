@@ -25,9 +25,13 @@ public class OperadoresAritmeticos {
         System.out.println(valor);
         System.out.println(numero);*/
         
-        int x = 4;
+        /*int x = 4;
         x+=2;//x = x+2
-        System.out.println(x);
+        System.out.println(x);*/
+        
+        double ale = Math.random();
+        int n = (int) (15 + ale *(50-5));
+        System.out.println(n);
     }
     
 }
